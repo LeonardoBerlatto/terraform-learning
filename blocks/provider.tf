@@ -3,8 +3,8 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Owner       = "LeonardoBerlatto"
-      Managed_by  = "Terraform"
+      Owner      = "LeonardoBerlatto"
+      Managed_by = "Terraform"
     }
   }
 }
