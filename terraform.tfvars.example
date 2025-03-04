@@ -1,0 +1,28 @@
+# Common variables
+bucket_name = "temp-image-bucket-leonardo-berlatto"
+owner       = "LeonardoBerlatto"
+environment = "dev"
+
+# Enable/disable cloud providers
+cloud_providers = {
+  aws   = true
+  gcp   = false  # Set to true to enable
+  azure = false  # Set to true to enable
+  oci   = false  # Set to true to enable
+}
+
+# AWS Configuration
+aws_region = "us-east-2"
+
+# GCP Configuration - Required if GCP is enabled
+gcp_project_id = "your-gcp-project-id"
+gcp_region     = "us-central1"
+
+# Azure Configuration - Required if Azure is enabled
+azure_location      = "eastus"
+azure_resource_group = "storage-rg"
+
+# OCI Configuration - Required if OCI is enabled
+oci_region        = "us-ashburn-1"
+oci_compartment_id = "ocid1.compartment.oc1..your-compartment-id"
+oci_namespace      = "your-oci-namespace"
