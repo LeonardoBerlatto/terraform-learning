@@ -127,9 +127,8 @@ resource "azurerm_storage_account" "storage_account" {
 
 resource "azurerm_storage_container" "image_container" {
   count                 = var.cloud_providers.azure ? 1 : 0
-  
   name                  = "images"
-  storage_account_id    = azurerm_storage_account.storage_account[0].id
+  storage_account_name  = azurerm_storage_account.storage_account[0].name
   container_access_type = "private"
 }
 
